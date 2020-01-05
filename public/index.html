@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>tuio simulator test</title> 
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <div class="main-container">
+        <div id="left_container" class="console-canvas">
+            <div id="console" class="console-container">
+            
+            </div>
+            <div class="canvas-container">
+                <canvas id="canvas" class="renderer"></canvas>
+                <div class="explanation-container">
+                    <h1>Utiliser les cartes 0, 1 et 2 du simulateur.</h1>
+                    </br>
+                    </br>
+                    <p>Carte 0 (rotation) : vitesse de mouvement de la caméra.</p>
+                    </br>
+                    <p>Carte 1 : zoom.</p>
+                    </br>
+                    <p>Carte 2 : rotation de la Terre.</p>
+                </div>
+            </div>
+        </div>
+        <div id="earth_container" class="earth-container">
+
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="js/class/TableHandler.js"></script>
+    <script type="text/javascript" src="js/lib/three.js"></script>
+    <script type="text/javascript" src="js/class/Earth.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

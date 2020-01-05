@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+h1, p {
+    color: white;
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 1.2vw;
+}
+
+.console-container {
+    background-color: black;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.renderer {
+    background-color: black;
+    border: 1px solid grey;
+    width: 100%;
+    height: calc(100% - 2px);
+}
+
+.console-container samp {
+    font-size: 1.4vh;
+    color: white;
+}
+
+.canvas-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.explanation-container {
+    background-color: black;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.console-canvas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+}
+
+.earth-renderer {
+    float: right;
+    height: 100vh;
+    width: 100%;
+}
