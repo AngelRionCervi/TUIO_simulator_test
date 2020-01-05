@@ -1,0 +1,25 @@
+{
+  "name": "mashup_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "osc-js": "^2.1.0",
+    "ws": "^7.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelRionCervi/TUIO_simulator_test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngelRionCervi/TUIO_simulator_test/issues"
+  },
+  "homepage": "https://github.com/AngelRionCervi/TUIO_simulator_test#readme"
+}
