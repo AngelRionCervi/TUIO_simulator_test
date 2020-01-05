@@ -6,6 +6,7 @@ class TableHandler {
         this.positions = [];
         this.container = container;
         this.cardSize = 30;
+        this.defaultCradColor = "grey";
     }
 
     init(data) {
@@ -66,9 +67,23 @@ class TableHandler {
     render() {
 
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-        this.ctx.fillStyle = "blue";
     
         this.positions.forEach(v => {
+
+            switch (v.fixedId) {
+                case 0:
+                    this.ctx.fillStyle = "blue";
+                    break;
+                case 1:
+                    this.ctx.fillStyle = "red";
+                    break;
+                case 2:
+                    this.ctx.fillStyle = "yellow";
+                    break;
+                default:
+                    this.ctx.fillStyle = this.defaultCradColor;
+                    break;
+            }
     
             if (v.pos) { 
                 this.ctx.save();
